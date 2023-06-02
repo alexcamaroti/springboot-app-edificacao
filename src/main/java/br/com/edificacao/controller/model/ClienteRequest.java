@@ -16,5 +16,6 @@ public class ClienteRequest {
     private String dataNascimento;
     private String email;
     private String telefone;
+    private EnderecoModel endereco;
 
 }

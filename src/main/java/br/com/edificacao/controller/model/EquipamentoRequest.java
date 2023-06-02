@@ -11,6 +11,6 @@ public class EquipamentoRequest {
 
     private String descricao;
     private String tipo;
-    private String unidade_fornecimento;
-    private Long qtd_estoque;
+    private String unidadeFornecimento;
+    private Long qtdEstoque;
 }
