@@ -1,4 +1,4 @@
-package br.com.edificacao.service.db.repository.entity;
+package br.com.edificacao.repository.entity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -14,8 +14,8 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Builder
 @Entity
-@Table(name = "TB_ENDERECO")
-public class EnderecoEntity {
+@Table(name = "TB_EQUIPAMENTO")
+public class EquipamentoEntity {
 
     @Id
     @Column(name = "equipamento_id")
@@ -28,6 +28,4 @@ public class EnderecoEntity {
     private String unidadeFornecimento;
     @Column(name = "qtd_estoque")
     private Long qtdEstoque;
-    @Column(name = "cliente_id")
-    private String codigoCliente;
 }

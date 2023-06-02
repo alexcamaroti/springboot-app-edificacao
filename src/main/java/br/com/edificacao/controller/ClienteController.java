@@ -6,6 +6,7 @@ import br.com.edificacao.service.CadastroClienteService;
 import br.com.edificacao.service.ConsultaClienteService;
 import io.micrometer.common.util.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -22,7 +23,9 @@ public class ClienteController {
 
     @PostMapping
     public void cadastrar(@RequestBody ClienteRequest cliente){
+
         cadastroClienteService.cadastrar(cliente);
+        ResponseEntity.status(HttpStatus.CREATED).build();
     }
 
     @GetMapping

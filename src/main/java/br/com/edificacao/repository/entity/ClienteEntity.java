@@ -1,4 +1,4 @@
-package br.com.edificacao.service.db.repository.entity;
+package br.com.edificacao.repository.entity;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import jakarta.persistence.Column;

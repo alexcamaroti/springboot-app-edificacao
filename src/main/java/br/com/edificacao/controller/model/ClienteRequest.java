@@ -11,7 +11,6 @@ public class ClienteRequest {
 
     private String nomeCompleto;
     private String numeroDocumento;
-    private String tipoPessoa;
     private String nomeFantasia;
     private String dataNascimento;
     private String email;

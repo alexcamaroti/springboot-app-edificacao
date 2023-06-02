@@ -10,6 +10,8 @@ import br.com.edificacao.service.ConsultaClienteService;
 import br.com.edificacao.service.ConsultaEquipamentoService;
 import io.micrometer.common.util.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -25,8 +27,9 @@ public class EquipamentoController {
     private ConsultaEquipamentoService consultaEquipamentoService;
 
     @PostMapping
-    public void cadastrar(@RequestBody EquipamentoRequest cliente){
-        cadastroEquipamentoService.cadastrar(cliente);
+    public void cadastrar(@RequestBody EquipamentoRequest equipamento){
+        cadastroEquipamentoService.cadastrar(equipamento);
+        ResponseEntity.status(HttpStatus.CREATED).build();
     }
 
     @GetMapping

@@ -1,6 +1,6 @@
-package br.com.edificacao.service.db.repository;
+package br.com.edificacao.repository;
 
-import br.com.edificacao.service.db.repository.entity.EquipamentoEntity;
+import br.com.edificacao.repository.entity.EquipamentoEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
